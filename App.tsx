@@ -7,6 +7,7 @@ import {
   Settings, Info, Save, FileDown, Plus, Trash2, Camera,
   ChevronRight, ChevronLeft, Eye, Share2, Search, Crosshair
 } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const APP_TITLE_IMAGE = "https://i.pinimg.com/736x/d9/b3/1c/d9b31ce99578785ace8402c6844abc64.jpg";
 
@@ -165,6 +166,7 @@ const App: React.FC = () => {
             </div>
           )}
         </div>
+        <SpeedInsights />
       </div>
     );
   }
@@ -251,6 +253,7 @@ const App: React.FC = () => {
           </div>
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 };
