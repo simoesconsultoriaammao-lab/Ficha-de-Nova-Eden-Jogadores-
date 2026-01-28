@@ -1,0 +1,5 @@
+{
+  "name": "Nova Eden RPG Sheet",
+  "description": "A comprehensive RPG character sheet management application for the Nova Eden universe, featuring advanced calculations for health, mana, damage, and skills, as well as inventory management and character archiving.",
+  "requestFramePermissions": []
+}

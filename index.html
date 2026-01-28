@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Eden - Ficha de Personagem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=MedievalSharp&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0c0c0c;
+            color: #e5e5e5;
+        }
+        h1, h2, h3, .medieval {
+            font-family: 'Cinzel', serif;
+        }
+        .bg-rpg {
+            background-image: url('https://i.pinimg.com/736x/5b/51/7e/5b517e5afff8bb74b5075ff3b028f0c2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .glass-panel {
+            background: rgba(18, 18, 18, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        .rpg-input {
+            background: rgba(40, 40, 40, 0.6);
+            border-bottom: 2px solid #b91c1c;
+            color: #fff;
+            padding: 4px 8px;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .rpg-input:focus {
+            border-bottom: 2px solid #facc15;
+            background: rgba(60, 60, 60, 0.8);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #b91c1c;
+            border-radius: 4px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+<body class="bg-rpg min-h-screen">
+    <div id="root"></div>
+</body>
+</html>
