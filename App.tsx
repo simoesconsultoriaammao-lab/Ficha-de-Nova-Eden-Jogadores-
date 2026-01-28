@@ -7,6 +7,7 @@ import {
   Settings, Info, Save, FileDown, Plus, Trash2, Camera,
   ChevronRight, ChevronLeft, Eye, Share2, Search, Crosshair
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const APP_TITLE_IMAGE = "https://i.pinimg.com/736x/d9/b3/1c/d9b31ce99578785ace8402c6844abc64.jpg";
 
@@ -128,7 +129,8 @@ const App: React.FC = () => {
 
   if (view === 'archive') {
     return (
-      <div className="max-w-6xl mx-auto p-4 md:p-8 animate-fadeIn">
+      <>
+        <div className="max-w-6xl mx-auto p-4 md:p-8 animate-fadeIn">
         <header className="flex flex-col items-center mb-12">
           <img src={APP_TITLE_IMAGE} alt="Nova Eden" className="w-full max-w-2xl rounded-lg shadow-2xl mb-8 border border-yellow-500/30" />
           <h1 className="text-4xl md:text-5xl font-black text-center text-yellow-500 medieval uppercase tracking-widest mb-4">Heróis de Outrora</h1>
@@ -165,12 +167,15 @@ const App: React.FC = () => {
             </div>
           )}
         </div>
-      </div>
+        </div>
+        <Analytics />
+      </>
     );
   }
 
   return (
-    <div className="min-h-screen pb-20">
+    <>
+      <div className="min-h-screen pb-20">
       <nav className="sticky top-0 z-50 glass-panel border-b border-yellow-600/30 p-4 print:hidden">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
           <div className="flex items-center gap-4">
@@ -251,7 +256,9 @@ const App: React.FC = () => {
           </div>
         </div>
       )}
-    </div>
+      </div>
+      <Analytics />
+    </>
   );
 };
 
